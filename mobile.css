@@ -9,7 +9,6 @@ body {
 }
 #header {
 	display: inline-block;
-	margin-left: 32px;
 	vertical-align: top;
 	margin-top: -32px;
 	width: 70%;
