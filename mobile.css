@@ -30,6 +30,21 @@ h3 {
 #header p {
 	font-size: 1em;
 }
+#links img {
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	transition-duration: 200ms;
+	margin-right: 10px;
+}
+#links img:hover {
+	cursor: pointer;
+	-webkit-transform: scale(1.25);
+	-ms-transform: scale(1.25);
+	transform: scale(1.25);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition-duration: 200ms;
+}
 .box {
 	padding-top: 1px;
 	padding-left: 24px;
