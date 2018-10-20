@@ -1,0 +1,154 @@
+@import "./styles/font-face";
+
+@include font-face(
+	"Product Sans",
+	fonts/ProductSans-Bold,
+	bold,
+	null,
+	eot woff ttf svg
+);
+@include font-face(
+	"Product Sans",
+	fonts/ProductSans-Italic,
+	normal,
+	italic,
+	eot woff ttf svg
+);
+@include font-face(
+	"Product Sans",
+	fonts/ProductSans-Regular,
+	normal,
+	null,
+	eot woff ttf svg
+);
+
+$gray: #333;
+$white: #fafafa;
+$rally: #e9f0fd;
+$cigna: #fcefc8;
+$pallete: #f9e9e6;
+$uhsse: #e8f3eb;
+
+body {
+	max-width: 800px;
+	margin: 10% auto 0;
+	padding: 0 1em;
+	background-color: $gray;
+
+	quotes: "“" "”" "‘" "’";
+	font-family: "Product Sans";
+	font-size: calc(1em + 0.5vmin);
+	color: $white;
+}
+
+::selection {
+	background-color: $white;
+	color: $gray;
+}
+
+.header__description {
+	line-height: 1.5;
+}
+
+.header__attention {
+	font-weight: 600;
+}
+
+.header__link {
+	transition: 0.15s all ease;
+
+	display: inline-block;
+	width: 25px;
+
+	&:not(:last-of-type) {
+		margin-right: 20px;
+	}
+
+	&:hover {
+		transition: 0.15s all ease;
+		transform: scale(1.25);
+	}
+}
+
+.header__icon {
+	width: 100%;
+}
+
+.showcase {
+	margin-top: 2.25em;
+}
+
+.showcase__heading {
+	font-size: 1.5em;
+}
+
+.showcase__list {
+	display: grid;
+	grid-row-gap: 0.35em;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+@mixin showcase__item--color($name, $color, $dark-text: false) {
+	&--#{$name} {
+		background-color: $color;
+
+		@if $dark-text == true {
+			$color: lighten($gray, 37.5%);
+		}
+
+		.showcase__name {
+			color: transparentize(darken($color, 50%), 0.25);
+		}
+
+		.showcase__description {
+			color: transparentize(darken($color, 35%), 0.25);
+		}
+	}
+}
+
+.showcase__item {
+	transition: 0.15s all ease;
+	border-radius: 5px;
+
+	&:hover {
+		transition: 0.15s all ease;
+		transform: scale(1.05);
+	}
+
+	@include showcase__item--color(rally, $rally);
+	@include showcase__item--color(pallete, $pallete);
+	@include showcase__item--color(uhsse, $uhsse);
+	@include showcase__item--color(cigna, $cigna, true);
+}
+
+.showcase__link {
+	display: grid;
+	gap: 12.5% 0;
+
+	padding: 20px;
+
+	text-decoration: none;
+	color: inherit;
+}
+
+.showcase__name {
+	font-size: 1.15em;
+	font-weight: 600;
+}
+
+.showcase__description {
+	margin: 0;
+}
+
+.showcase__detail {
+	font-style: italic;
+}
+
+@media (min-width: 1024px) {
+	.showcase__link {
+		grid-template-columns: 1fr 2.75fr;
+	}
+}
