@@ -91,7 +91,7 @@ body {
 	list-style: none;
 }
 
-@mixin showcase__item--color($name, $color, $dark-text: false) {
+@mixin showcase__link--color($name, $color, $dark-text: false) {
 	&--#{$name} {
 		background-color: $color;
 
@@ -110,28 +110,29 @@ body {
 }
 
 .showcase__item {
-	transition: 0.15s all ease;
-	border-radius: 5px;
-
-	&:hover {
-		transition: 0.15s all ease;
-		transform: scale(1.05);
-	}
-
-	@include showcase__item--color(rally, $rally);
-	@include showcase__item--color(pallete, $pallete);
-	@include showcase__item--color(uhsse, $uhsse);
-	@include showcase__item--color(cigna, $cigna, true);
 }
 
 .showcase__link {
+	transition: 0.15s all ease;
+
 	display: grid;
 	gap: 12.5% 0;
 
+	border-radius: 5px;
 	padding: 20px;
 
 	text-decoration: none;
 	color: inherit;
+
+	&[href]:hover {
+		transition: 0.15s all ease;
+		transform: scale(1.05);
+	}
+
+	@include showcase__link--color(rally, $rally);
+	@include showcase__link--color(pallete, $pallete);
+	@include showcase__link--color(uhsse, $uhsse);
+	@include showcase__link--color(cigna, $cigna, true);
 }
 
 .showcase__name {
