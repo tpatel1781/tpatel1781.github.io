@@ -10,6 +10,7 @@ module.exports = {
 				}
 			]
 		}),
+		require("postcss-gap-properties"),
 		require("autoprefixer")({
 			grid: true
 		})
