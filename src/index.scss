@@ -109,13 +109,11 @@ body {
 	}
 }
 
-.showcase__item {
-	display: grid;
-	gap: 12.5% 0;
-}
-
 .showcase__link {
 	transition: 0.15s all ease;
+
+	display: grid;
+	gap: 12.5% 0;
 
 	border-radius: 5px;
 	padding: 20px;
