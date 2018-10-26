@@ -21,17 +21,14 @@
 	$exts: eot woff2 woff ttf svg
 ) {
 	$src: null;
-
 	$extmods: (
 		eot: "?",
 		svg: "#" + str-replace($name, " ", "_")
 	);
-
 	$formats: (
 		otf: "opentype",
 		ttf: "truetype"
 	);
-
 	@each $ext in $exts {
 		$extmod: if(
 			map-has-key($extmods, $ext),
@@ -45,7 +42,6 @@
 			comma
 		);
 	}
-
 	@font-face {
 		font-family: quote($name);
 		font-style: $style;
