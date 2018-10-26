@@ -1,6 +1,6 @@
-<img style="float: left; max-height: 150px; margin-right: 30px;" src="https://i.imgur.com/AJiKmYW.png" alt="Avatar">
+<img src="https://i.imgur.com/AJiKmYW.png" alt="Avatar" align="left" height="100">
 
-<h1 style=" border-bottom: none;">Tej Patel's Website</h1>
+# Tej Patel's Website
 
 My personal website for showcasing projects, work experience, and other
 information about me.
