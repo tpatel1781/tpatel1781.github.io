@@ -2,43 +2,40 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="theme-color" content="#333333"> <!--For coloring Chrom's address bar-->
+		<meta name="theme-color" content="#333333"> <!--For coloring Chrome's address bar-->
 		<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="mobile.css">
 		<link rel="stylesheet" type="text/css" media="screen and (min-width: 800px)" href="desktop.css">
+		<link rel="shortcut icon" type="image/png" href="TejDark.png"/>
 		<title>Tej Patel</title>
 	</head>
 	<body>
 		<div id="header">
 			<h1>Hi, I'm Tej</h1>
-			<p>I am a sophomore studying computer science at <span class="name">Northeastern</span></p>
+			<p>I am a junior studying computer science at <span class="name">Northeastern University</span></p>
 			<div id="links">
 				<a href="https://github.com/tpatel1781/" target="_blank"><img src="./assets/github_icon.png"/></a>
 				<a href="https://www.linkedin.com/in/tej-patel-696746147/" target="_blank"><img src="./assets/linkedin_icon.png"/></a>
-				<a href="mailto:tpatel1781@gmail.com"><img src="./assets/email_icon.png"/></a>
+				<a href="mailto:patel.tej@husky.neu.edu"><img src="./assets/email_icon.png"/></a>
 			</div>
 		</div>
 
 		<h2>Projects</h2>
+		<div id="medz" class="box" onclick="location.href='https://github.com/Vontech/MedicineApp';" style="cursor: pointer;">
+			<h3>Medz</h3>
+			<p class="description">Easily scan, track, and get reminded to take your medications</p>
+		</div>
+		<div id="feast" class="box" onclick="location.href='https://github.com/tpatel1781/FeastFrontend';" style="cursor: pointer;">
+			<h3>Feast</h3>
+			<p class="description">Group-based restaurant suggestions</p>
+		</div>
 		<div id="rally" class="box" onclick="location.href='https://github.com/GoodEnoughSoftware/Rally';" style="cursor: pointer;">
 			<h3>Rally</h3>
 			<p class="description">Find optimal meeting location between friends</p>
 		</div>
 		<div id="palette" class="box" onclick="location.href='https://github.com/tpatel1781/ColorPalette';" style="cursor: pointer;">
 			<h3>Color Palette</h3>
-			<p class="description">Create a Material Design color cheme from any image</p>
-		</div>
-		<div id="uhsse" class="box" onclick="location.href='http://uhsse.org';" style="cursor: pointer;">
-			<h3>UHSSE.org</h3>
-			<p class="description">Redesigned high school website</p>
+			<p class="description">Extract a Material Design color palette from any image</p>
 		</div>
 		
-		<h2>Work Experience</h2>
-		<div id="cigna" class="box">
-			<h3 id="cignaHeader">Cigna</h3>
-			<div class="description">
-				<p>Software Engineering Intern</p>
-				<p id="workTime">Summer 2016 and 2017</p>
-			</div>
-		</div>
 	</body>
 </html>

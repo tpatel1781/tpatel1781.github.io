@@ -21,6 +21,13 @@ h2 {
 	font-family: 'productSansBold';
 	font-size: 28px;
 }
+h3 {
+	font-family: 'productSansBold';
+	margin-top: 0px;
+	font-size: 21px;
+	display: inline-block;
+	width: 164px
+}
 #header p {
 	font-size: 18px;
 }
@@ -57,55 +64,40 @@ h2 {
 	margin-top: 10px;
 	margin-bottom: 14px;
 }
-#rally {
+#medz {
 	background-color: #E9F0FD;
 	color: #6A99E8;
 }
-#rally .description {
-	padding-left: 128px;
-}
-#palette {
+/* #medz .description {
+	padding-left: 100px;
+} */
+#feast {
 	background-color: #F9E9E6;
 	color: #C94638;
 }
-#palette .description {
+/* #feast .description {
 	padding-left: 52px;
-}
-#uhsse {
+} */
+#rally {
 	background-color: #E8F3EB;
 	color: #64A36B;
 }
-#uhsse .description {
+/* #rally .description {
 	padding-left: 71px;
-}
-#cigna {
+} */
+#palette {
 	background-color: #FCEFC8;
 	color: #505150;
 }
-#cigna .description {
-	padding-left: 119px;
-}
-#cignaHeader {
-	vertical-align: top;
-	margin-top: 14px;
-}
-h3 {
-	font-family: 'productSansBold';
-	margin-top: 0px;
-	font-size: 21px;
-	display: inline-block;
-}
+/* #palette .description {
+	padding-left: 50px;
+} */
 .description {
 	display: inline-block;
 	opacity: 0.7;
 }
 .description p {
 	display: block;
-}
-#workTime {
-	font-size: 16px;
-	font-family: 'productSansItalic';
-	margin-top: -15px;
 }
 @font-face {
 	font-family: productSansRegular;
